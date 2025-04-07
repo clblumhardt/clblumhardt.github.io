@@ -1,38 +1,51 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    <title> GEOG 485L/585L -- My First Lab </title>
+  <meta charset="utf-8">
+  <title>Geog 485L/585L - Lab 06 - Task 01 Deliverables </title>
+  <link rel="stylesheet" href="C:\Blumhardt\UNM\Courses\S2025\585\CameronBlumhardt_PersonalWebsite\clblumhardt.github.io\myCSS_styleFiles\Lab06_Task01_deliverables.css" />
+  <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
+
 <body>
-    <p>
-        My first map will appear here:
-    </p>
-    <div id="mapID" style="height: 400px; width: 600px;"></div>
-    <script>
+  <h1> Blumhardt Lab 6: SVG Shapes </h1>
 
-        // Bandelier Hall East lat/long: 35.0843^0 N, 106.6241^0 W
-        // create a map variable "mymap" that points to the map placed in the mapID <div>
-        // zoom the view on Bandelier Hall East building at a 17 zoom level
-        var mymap = L.map('mapID').setView([35.0843, -106.6241], 17);
+  <p>See below for my SVG shape design::</p>
+  <svg width="1000" height="500">
+    <circle cx="450" cy="200" r="50" fill=" rgba(128, 0, 128, 1.0)"/> <!--main circle 1 (top left)-->
+    <circle cx="550" cy="200" r="50" fill=" rgba(0, 0, 255, 0.75)"/> <!--main circle 2 (top right)-->
+    <circle cx="500" cy="287" r="50" fill=" rgba(0, 255, 0, 0.5)"/> <!--main circle 3 (bottom)-->
+    <circle cx="50" cy="50" r="25" class="my_svg_circles1"/>
+    <circle cx="150" cy="50" r="25" class="my_svg_circles2"/>
+    <circle cx="250" cy="50" r="25" class="my_svg_circles1"/>
+    <circle cx="350" cy="50" r="25" class="my_svg_circles2"/>
+    <circle cx="250" cy="50" r="25" class="my_svg_circles1"/>
+    <circle cx="450" cy="50" r="25" class="my_svg_circles2"/>
+    <circle cx="550" cy="50" r="25" class="my_svg_circles1"/>
+    <circle cx="650" cy="50" r="25" class="my_svg_circles2"/>
+    <circle cx="750" cy="50" r="25" class="my_svg_circles1"/>
+    <circle cx="850" cy="50" r="25" class="my_svg_circles2"/>
+    <circle cx="950" cy="50" r="25" class="my_svg_circles1"/>
+    <circle cx="50" cy="450" r="25" class="my_svg_circles2"/>
+    <circle cx="150" cy="450" r="25" class="my_svg_circles2"/>
+    <circle cx="250" cy="450" r="25" class="my_svg_circles1"/>
+    <circle cx="350" cy="450" r="25" class="my_svg_circles2"/>
+    <circle cx="250" cy="450" r="25" class="my_svg_circles1"/>
+    <circle cx="450" cy="450" r="25" class="my_svg_circles2"/>
+    <circle cx="550" cy="450" r="25" class="my_svg_circles1"/>
+    <circle cx="650" cy="450" r="25" class="my_svg_circles2"/>
+    <circle cx="750" cy="450" r="25" class="my_svg_circles1"/>
+    <circle cx="850" cy="450" r="25" class="my_svg_circles2"/>
+    <circle cx="950" cy="450" r="25" class="my_svg_circles1"/>
+    <rect x="0" y="0" width="1000" height="500" class="my_bckgrnd">
+    
+  </svg>
 
-        // create a variable named "osm" that is used to hold OpenStreetMap tile layer
-        var osm = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+ 
 
-        // add the OpenStreetMap tile layer (i.e., the variable osm you defined above) to the map
-        osm.addTo(mymap);
 
-        // add a marker on the tile layer
-        var marker = L.marker([35.0843, -106.6241]).addTo(mymap);
-
-        // add a popup
-        // Popups are usually used when you want to attach some information to a particular object on a map
-        marker.bindPopup("<b>Hello world!</b> <br><i>Bandelier Hall East</i> <br>University of New Mexico").openPopup();
-        // <b> tag used to bold text
-        // <br> tag used for newline
-        // <i> tag used for italic text
-
-    </script>
 </body>
+
 </html>
