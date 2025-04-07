@@ -7,6 +7,7 @@
   <title>Geog 485L/585L - Lab 06 - Task 01 Deliverables </title>
   <link rel="stylesheet" href="myCSS_styleFiles/Lab06_Task01_deliverables.css" />
   <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -42,14 +43,38 @@
     <rect x="0" y="0" width="1000" height="500" class="my_bckgrnd">
     
   </svg>
-
+  <p>
+    My first map will appear here:
+  </p>
+  <div id="mapID" style="height: 400px; width: 600px;"></div>
+  <script>
+  
+    // Bandelier Hall East lat/long: 35.0843^0 N, 106.6241^0 W
+    // create a map variable "mymap" that points to the map placed in the mapID <div>
+    // zoom the view on Bandelier Hall East building at a 17 zoom level
+    var mymap = L.map('mapID').setView([35.0843, -106.6241], 17);
+  
+    // create a variable named "osm" that is used to hold OpenStreetMap tile layer
+    var osm = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+  
+    // add the OpenStreetMap tile layer (i.e., the variable osm you defined above) to the map
+    osm.addTo(mymap);
+  
+    // add a marker on the tile layer
+    var marker = L.marker([35.0843, -106.6241]).addTo(mymap);
+  
+    // add a popup
+    // Popups are usually used when you want to attach some information to a particular object on a map
+    marker.bindPopup("<b>Hello world!</b> <br><i>Bandelier Hall East</i> <br>University of New Mexico").openPopup();
+    // <b> tag used to bold text
+    // <br> tag used for newline
+    // <i> tag used for italic text
+  
+  </script>
  
 
 
 </body>
 
-<<<<<<< HEAD
+
 </html>
-=======
-</html>
->>>>>>> c81c5ea81d68ba1b3117560ecbeb7d7e6252cfd4
