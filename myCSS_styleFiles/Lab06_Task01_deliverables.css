@@ -1,0 +1,34 @@
+/* Put your css code for your Lab06 Task01 deliverables in this css file */
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(22, 83, 22);
+    text-align: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    text-align: left;
+}
+
+.my_bckgrnd{
+    fill: aquamarine;
+    stroke: blue;
+    stroke-width: 10;
+    opacity: 0.10;
+}
+
+.my_svg_circles1{
+    fill: orange;
+    stroke: teal;
+    stroke-width: 10;
+    opacity: 1.0;
+}
+
+.my_svg_circles2{
+    fill: teal;
+    stroke: orange;
+    stroke-width: 10;
+    opacity: 1.0;
+}
