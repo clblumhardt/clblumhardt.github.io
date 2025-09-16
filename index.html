@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HomePage</title>
+  <title>Main</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="CSS_downloaded_libraries/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="myCSS_styleFiles/Content_Styles.css">
   <script src="JS_downloaded_libraries/jquery-3.7.1.min.js"></script>
+
   <script src="JS_downloaded_libraries/bootstrap-3.4.1-dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-  body {
-    position: relative; 
-  }
-  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #3c556b;}
-  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #34654a;}
-  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
-  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "iceNahpT6ImmmzQvW",
+      });
+    })();
+  </script>
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -35,7 +36,8 @@
         <ul class="nav navbar-nav">
           <li><a href="#section1">Back to Top</a></li>
           <li><a href="#section2">About</a></li>
-          <li><a href="https://clblumhardt.github.io/Tabs/index.html">Projects</a></li>
+          <li><a href="#section3">Contact</a></li>
+          <li><a href="Tabs/index.html">Projects</a></li>
           <li><a href="https://clblumhardt.github.io/MyWebApp/index.html">Sample Web App</a></li>
         </ul>
       </div>
@@ -43,37 +45,55 @@
   </div>
 </nav>    
 
+<!--Begin Main Section-->
 <div id="section1" class="container-fluid">
-  <div class="container-fluid text-center">    
+  <!--Left Column w/ links to sites and resources-->
+  <div class="container-fluid text-left">    
     <div class="row content">
       <div class="col-sm-2 sidenav">
+        <p></p>
         <p><a href="https://www.linkedin.com/in/cameron-blumhardt">LinkedIn</a></p>
-        <p><a href="#">Google Scholar (in prep)</a></p>
+        <p><a href="#">ORCID</a></p>
+        <p><a href="#">Google Scholar</a></p>
         <p><a href="https://geography.unm.edu/people/graduate-students/graduate_students.html">UNM Grad Student Page</a></p>
       </div>
+      <!--Center of Main Section w/ text-->
       <div class="col-sm-8 text-left"> 
         <h1>Welcome to My Site</h1>
-        <p>I am a PhD student in the Department of Geography and Environmental Studies at the University of New Mexico. My current research interests are listed below. </p>
+        <p>I am a PhD student in the Department of Geography and Environmental Studies at the University of New Mexico. My current research foci are listed below. </p>
         <hr>
         <h3>Broad Research Interests</h3>
-        <p>Social and political factors driving development and land use change, Latin America,   qualitative methods, remote sensing, methods integration into interdisciplinary research, critical physical geography. Additional interests include 3-D photogrammetric/structure-from-motion (SfM) modeling, graphic design, and photography.</p>
+        <p>Social and political factors driving development and land use change, Latin America, qualitative methods, remote sensing, methods integration into interdisciplinary research, critical physical geography. Additional interests include 3-D photogrammetric/structure-from-motion (SfM) modeling, graphic design, and photography.</p>
       </div>
-      <div class="col-sm-2 sidenav">
-        <div class="well">
-          <img src="images/Photo.png" alt="Course Photo" style="width:100px;height:100px;">
-          <p>Iceland, 2018</p>
-        </div>
-        <div class="well">
-          <img src="images/Photo2.jpg" alt="Course Photo" style="width:100px;height:100px;">
-          <p>Field Work, 2021</p>
+      <!--Left of Main Section w/ images & placeholder images-->
+      <div>
+        <div class="col-sm-2 text-right">
+         <p></p>
+         <img src="images/Photo.png" alt="Course Photo" style="width:150px;height:150px;">
+         <p></p>
+         <img src="images/Photo2.jpg" alt="Course Photo" style="width:150px;height:150px;">
+         <p></p>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <div id="section2" class="container-fluid">
-  <h1>About Me</h1>
+  <h1>About</h1>
   <p>Skills & Certifications</p>
+  <p></p>
+</div>
+
+<!--Section 3 w/ Contact Form-->
+<div id="section3" class="container-fluid">
+  <h1>Contact</h1>
+      <form id="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name">
+        <input type="email" name="user_email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
   <p></p>
 </div>
 
