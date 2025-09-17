@@ -1,0 +1,57 @@
+/* Content styles consistent across full site */  
+
+
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #283037;
+}
+
+#section2 {padding-top:50px;height:500px;color: #fff; background-color: #24323e;
+}
+
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #142331;
+}
+
+#section41 {padding-top:50px;height:500px;color: #fff; background-color: #283037;
+}
+
+#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(227, 227, 227);
+    text-align: left;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+button{
+    color: #222;
+}
+
+h2{
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
