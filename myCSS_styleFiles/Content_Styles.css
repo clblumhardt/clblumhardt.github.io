@@ -1,4 +1,4 @@
-  
+/* Content styles consistent across full site */  
 
 
 #section1 {padding-top:50px;height:500px;color: #fff; background-color: #283037;
@@ -29,5 +29,11 @@ h1{
 p{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
     text-align: left;
 }
