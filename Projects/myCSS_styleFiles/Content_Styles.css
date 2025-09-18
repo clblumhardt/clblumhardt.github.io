@@ -10,7 +10,7 @@
 #section3 {padding-top:50px;height:500px;color: #fff; background-color: #142331;
 }
 
-#section41 {padding-top:50px;height:500px;color: #fff; background-color: #283037;
+#section41 {padding-top:50px;height:fit-content;color: #fff; background-color: #283037;
 }
 
 #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;
@@ -19,6 +19,12 @@
 h1{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h2{
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -34,24 +40,7 @@ p{
     text-align: left;
 }
 
-input{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    text-align: left;
-}
-
-textarea{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    text-align: left;
-}
-
-button{
+footer{
     color: #222;
+    background-color: #222;
 }
-
-h2{
-    background-color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-  }
